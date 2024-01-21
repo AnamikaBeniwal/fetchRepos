@@ -1,0 +1,95 @@
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clearfix {
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+}
+.profile_pic img {
+    width: 100px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid black;
+    margin: 20px;
+}
+.info{
+    flex-grow: 1;
+}
+#repositories-list ul li{
+    list-style: none;
+    padding: 0;
+}
+
+.two_columns{
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    column-count: 1; 
+    
+    @media (min-width: 768px) {
+        column-count: 2;
+    }
+}
+
+.two_columns > li{
+    min-height: 30%;
+    border: 4px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: scroll;
+}
+.language_list{
+    list-style: none;
+    display: flex;
+    overflow: scroll;
+}
+
+.language_list_item{
+    font-size: small; 
+    padding: 5px,20px;
+    margin: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: rgb(135, 135, 240);
+    border-radius: 5px;
+}
+
+
+.repo_name{
+    font-size: medium;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.repo_description{
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#pagination-container {
+    margin-top: 20px;
+}
+
+#pagination-container span {
+    cursor: pointer;
+    margin-right: 5px;
+    padding: 5px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+.pagination_navigate{
+    text-align: center;
+}

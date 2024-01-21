@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repositories</title>
+    <script src="config.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="mainstyle.css" >
+</head>
+<body>
+    <div class="clearfix">
+        <div class="profile">
+            <div class="profile_pic">
+                <img id="avatar" alt="GitHub pic">
+            </div>
+
+            <div class="info" style="font-family: Arial, Helvetica, sans-serif; margin-top: 20px;">
+                <h3  id="name">name</h3>
+                <p id="bio"> Bio</p>
+                <p>&#128205<span id="location"></span></p>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix">
+        <ul class="two_columns" id="repositories-list"></ul>
+    </div>
+    <div class="pagination_navigate">
+        <button type="button" id="previous">Previous</button>
+        <button type="button" id="next">Next</button>
+        <select id="number_display" name="pages">
+            <option value="10" >10</option>
+            <option value="20" >20</option>
+            <option value="30" >30</option>
+            <option value="40" >40</option>
+            <option value="50" >50</option>
+
+        </select>
+    </div>
+</body>
+</html>
